@@ -25,11 +25,12 @@ void setup() {
 
 void loop() {
   // Display a scrolling text
-  String str = "Hello World!";
+  // ONLY WRITE UPPERCASE CHARACTERS
+  String str = "HELLO WORLD!";
   dl1414.writeStringScrolling(str, 133);
 
   // Display a fixed string
-  str = "Hi";
+  str = "HI";
   dl1414.writeStringFix(str);
   delay(2000);
 
@@ -38,13 +39,13 @@ void loop() {
   delay(1000);
 
   // address columns directly
-  dl1414.writeByte('a',3);
+  dl1414.writeByte('A',3);
   delay(500);
-  dl1414.writeByte('c',1);
+  dl1414.writeByte('C',1);
   delay(500);
-  dl1414.writeByte('d',0);
+  dl1414.writeByte('D',0);
   delay(500);
-  dl1414.writeByte('b',2);
+  dl1414.writeByte('B',2);
   delay(2000);
 
   // show some special characters (arrows)
